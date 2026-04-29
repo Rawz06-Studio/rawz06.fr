@@ -27,7 +27,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5
         with:
-          images: ${{ vars.NEXUS_URL }}/rawz06-fr
+          images: ${{ vars.NEXUS_DOMAIN }}/rawz06-fr
           tags: |
             type=raw,value=latest
             type=sha,prefix={{branch}}-
