@@ -19,7 +19,7 @@ jobs:
       - name: Log in to Nexus Docker Registry
         uses: docker/login-action@v3
         with:
-          registry: ${{ vars.NEXUS_URL }}
+          registry: ${{ vars.REGISTRY_DOMAIN }}
           username: ${{ secrets.NEXUS_LOGIN }}
           password: ${{ secrets.NEXUS_PASSWORD }}
 
