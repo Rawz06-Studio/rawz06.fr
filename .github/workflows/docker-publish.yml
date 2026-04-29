@@ -10,7 +10,7 @@ jobs:
     uses: RawZ06-Studio/.github/.github/workflows/docker-build-push.yml@main
     with:
       image_name: rawz06-fr
-      dokploy_app_id: rawz06-homesite-staticapp-lo79et
+      dokploy_app_id: SrvYdrfXyWT9eiRrgFtCB
     secrets:
       NEXUS_LOGIN: ${{ secrets.NEXUS_LOGIN }}
       NEXUS_PASSWORD: ${{ secrets.NEXUS_PASSWORD }}
