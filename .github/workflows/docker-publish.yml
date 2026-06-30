@@ -8,6 +8,9 @@ on:
 jobs:
   build:
     uses: RawZ06-Studio/.github/.github/workflows/docker-build-push.yml@main
+    permissions:
+      contents: write   # Nécessaire pour les tags/releases
+      packages: write   # Nécessaire pour Docker/Maven/NPM
     with:
       image_name: rawz06-fr
       dokploy_app_id: SrvYdrfXyWT9eiRrgFtCB
